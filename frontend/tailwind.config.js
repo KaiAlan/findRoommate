@@ -9,7 +9,11 @@ export default {
       colors: {
         primary: '#e6fbff',
         secondary: '#86c4cf',
-        txt: '#006f91',
+        txt_large: '#006f91',
+        txt_small: '#178FA1',
+        clicked_home: '#C26B29',
+        unclicked_home: '#006F91',
+        review_box: '#148495'
       },
     },
   },
