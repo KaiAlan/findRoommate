@@ -15,6 +15,7 @@ export default {
         unclicked_home: '#006F91',
         review_box: '#148495'
       },
+      
     },
   },
   plugins: [],
