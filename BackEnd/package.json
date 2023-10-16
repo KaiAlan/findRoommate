@@ -1,0 +1,19 @@
+{
+  "name": "findroommate",
+  "version": "1.0.0",
+  "description": "Welcome to findRoommate, your go-to platform for effortlessly finding the perfect roommate. Whether you're a student, a working professional, or anyone in need of shared housing, our website streamlines the process of connecting with compatible roommates. Say goodbye to roommate hassles and hello to harmonious living.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Saurabh Kumar Jha",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.2"
+  }
+}
