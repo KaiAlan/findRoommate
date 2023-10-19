@@ -9,12 +9,14 @@ import {
   Polygon2,
   side,
   Room,
-  Roommate
+  Roommate,
+  testimonials, 
+  path_testimonials
 } from './assets';
 
 import Navbar from './components/Navbar';
 import Landing2 from './components/Landing2';
-
+import Card from './components/Card';
 
 const Home = () => {
   return (
@@ -85,6 +87,30 @@ const Home = () => {
       {/* Landing section 2 */}
 
       <Landing2 />
+
+      {/* Landing section 3 */}
+      
+      <div className="h-screen w-screen bg-primary flex flex-col items-center">
+      <div className="h-2/5 flex items-center relative">
+         <img
+            src={path_testimonials}
+            alt="path_testimonials"
+            className="h-1/2 absolute w-full"
+          />
+          <img
+            src={testimonials}
+            alt="testimonials"
+            className="h-1/2 relative z-10 w-full"
+          />
+      </div>
+
+        <div className="h-3/5 w-full flex flex-row justify-center gap-6 ">
+          <Card />
+          <Card />
+          <Card />
+          
+        </div>
+      </div>
 
     </div>
   )
