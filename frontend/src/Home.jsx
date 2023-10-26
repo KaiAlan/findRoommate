@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import { Link } from 'react-router-dom';
 
 // asset import
@@ -18,7 +18,14 @@ import Navbar from './components/Navbar';
 import Landing2 from './components/Landing2';
 import Card from './components/Card';
 
+import Modal from './components/Modal';
+
 const Home = () => {
+
+  const [showMyModal, setShowMyModal] = useState(false);
+    
+    const handleOnClose = () => setShowMyModal(false); 
+  
   return (
     <div>
       <div className='bg-primary h-screen relative'>
@@ -30,7 +37,7 @@ const Home = () => {
           className='h-full absolute right-0'
         />
 
-        <Navbar />
+        <Navbar setModal={setShowMyModal}/>
 
         {/* landind section 1 */}
         <div>
@@ -54,6 +61,7 @@ const Home = () => {
               />
             </div>
           </div>
+          
 
           {/* triangular buttons for easy search */}
 
@@ -82,6 +90,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        
       </div>
 
       {/* Landing section 2 */}
@@ -91,18 +100,18 @@ const Home = () => {
       {/* Landing section 3 */}
       
       <div className="h-screen w-screen bg-primary flex flex-col items-center">
-      <div className="h-2/5 flex items-center relative">
-         <img
-            src={path_testimonials}
-            alt="path_testimonials"
-            className="h-1/2 absolute w-full"
-          />
+        <div className="h-2/5 flex items-center relative">
           <img
-            src={testimonials}
-            alt="testimonials"
-            className="h-1/2 relative z-10 w-full"
-          />
-      </div>
+              src={path_testimonials}
+              alt="path_testimonials"
+              className="h-1/2 absolute w-full"
+            />
+            <img
+              src={testimonials}
+              alt="testimonials"
+              className="h-1/2 relative w-full"
+            />
+        </div>
 
         <div className="h-3/5 w-full flex flex-row justify-center gap-6 ">
           <Card />
@@ -111,7 +120,7 @@ const Home = () => {
           
         </div>
       </div>
-
+      <Modal onClose={handleOnClose} visible={showMyModal}/>
     </div>
   )
 }
