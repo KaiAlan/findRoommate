@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
 
-const Navbar = () => {
+
+
+const Navbar = ({setModal}) => {
+     
+
     return (
         <div className='flex justify-between items-center mx-10 z-10'>
             <div className=''>
@@ -33,16 +37,15 @@ const Navbar = () => {
                     </p>
                 </div>
                 <div className='z-10'>
-                    <Link
-                        to="/login"
-                        className='flex justify-center items-center p-6'
-                    >
-                        <button type="button" className="font-bold text-white bg-secondary hover:bg-secondary focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                   
+                        <button type="button" onClick={() => setModal(true)}  className="font-bold text-white bg-secondary hover:bg-secondary focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Login
                         </button>
-                    </Link>
+                   
                 </div>
+                
             </div>
+            
         </div>
     )
 }
