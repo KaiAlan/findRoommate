@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        'gray-transparent': 'rgba(100, 100, 100, 0.2)', 
+      },
       fontFamily: {
         'Gill_Sans_MT': ['Gill Sans MT', 'sans-serif']
       },
