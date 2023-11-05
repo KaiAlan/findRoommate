@@ -1,6 +1,6 @@
 import React from 'react'
 import profile from '../assets/profile.png'
-import Rating from './Rating'
+import {FaStar} from 'react-icons/fa'
 
 const Card = () => {
 
@@ -19,7 +19,13 @@ const Card = () => {
             </div>
             <div className='flex flex-col p-6 h-2/3 bg-white rounded-3xl absolute bottom-0 '>
                 <div className= 'flex absolute top-0 start-0 p-2 pl-4'>
-                  < Rating/>
+                  <div className='flex gap-1'>
+                    <FaStar size={25} />
+                    <FaStar size={25}/>
+                    <FaStar size={25}/>
+                    <FaStar size={25}/>
+                    <FaStar size={25}/>
+                  </div>
                 </div>
                 
                 <p className='text-txt_large text-lg leading-tight pt-6' >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore optio expedita enim hic facilis voluptatibus magni minus nesciunt praesentium ullam! </p>

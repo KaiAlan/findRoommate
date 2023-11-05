@@ -17,7 +17,6 @@ import {
 import Navbar from './components/Navbar';
 import Landing2 from './components/Landing2';
 import Card from './components/Card';
-
 import Modal from './components/Modal';
 
 const Home = () => {

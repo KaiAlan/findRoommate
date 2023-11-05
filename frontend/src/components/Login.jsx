@@ -38,7 +38,7 @@ const Login = () => {
   };
 
   return (
-    // <div className="bg-primary h-screen flex items-center justify-center relative">
+   
       <div className="h-1/3 w-1/6 bg-gray-transparent rounded-3xl px-4 py-6  ">
         <div className="h-1/6">
           <div className="h-3/4 w-full bg-white rounded-full flex justify-center items-center border-2 border-gray-400">
@@ -111,7 +111,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    // </div>
+    
   );
 };
 
