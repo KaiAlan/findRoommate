@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 
-const Signup = ({ toggleForm, handleSignup }) => {
+// const Signup = ({ toggleForm, handleSignup }) => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState(""); 
@@ -41,7 +42,7 @@ const Signup = ({ toggleForm, handleSignup }) => {
         type="submit"
         name="signup"
         className="w-1/2 py-1 rounded-full text-white bg-[#3ec8e0]"
-        onClick={handleSignup}
+        // onClick={handleSignup}
       >
         Signup
       </button>

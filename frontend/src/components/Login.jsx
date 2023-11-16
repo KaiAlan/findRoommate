@@ -13,14 +13,9 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleLogin = () => {
-    if (password === "12345") {
-      setIncorrectPassword(false);
-      
-    } else {
-      setIncorrectPassword(true);
-    }
-  };
+  // const handleLogin = () => {
+   
+  // };
 
   const handlePasswordInput = () => {
     if (incorrectPassword) {
@@ -33,9 +28,7 @@ const Login = () => {
     setIsLogin(!isLogin);
   };
 
-  const handleSignup = () => {
-    // Handle signup logic here
-  };
+
 
   return (
    
@@ -99,14 +92,15 @@ const Login = () => {
                   className={`w-1/2 py-1 rounded-full text-white ${
                     isLogin ? "bg-[#3ec8e0]" : "bg-[#4caf50]"
                   }`}
-                  onClick={handleLogin}
+                  // onClick={handleLogin}
                 >
                   Login
                 </button>
                 <a href="forgot_password">Forgot password?</a>
               </form>
             ) : (
-              <Signup toggleForm={toggleForm} handleSignup={handleSignup} />
+              // <Signup toggleForm={toggleForm} handleSignup={handleSignup} />
+              <Signup/>
             )}            
           </div>
         </div>
