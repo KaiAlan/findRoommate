@@ -33,9 +33,12 @@ const Login = () => {
     setIsLogin(!isLogin);
   };
 
-  const handleSignup = () => {
-    // Handle signup logic here
-  };
+  // const handleSignup = () => {
+  //   if (password !== confirmPassword) {
+  //         console.log("wrong password in confirm section !")
+  //       }
+  //       console.log(email+"\n"+password);
+  // };
 
   return (
     // <div className="bg-primary h-screen flex items-center justify-center relative">
@@ -106,7 +109,7 @@ const Login = () => {
                 <a href="forgot_password">Forgot password?</a>
               </form>
             ) : (
-              <Signup toggleForm={toggleForm} handleSignup={handleSignup} />
+              <Signup toggleForm={toggleForm} />
             )}            
           </div>
         </div>

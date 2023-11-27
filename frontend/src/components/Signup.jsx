@@ -2,10 +2,18 @@
 
 import React, { useState } from "react";
 
-const Signup = ({ toggleForm, handleSignup }) => {
+const Signup = ({ toggleForm }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState(""); 
+
+
+  const handleSignup = () => {
+    if (password !== confirmPassword) {
+      console.log("wrong password in confirm section !")
+    }
+    console.log(email+"\n"+password);
+  }
   
   return (
     <form
